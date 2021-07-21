@@ -15,5 +15,6 @@ module.exports = {
       },
     },
     `gatsby-transformer-remark`,
+    'gatsby-plugin-dts-css-modules',
   ],
 };

@@ -3233,6 +3233,12 @@ dotenv@^8.2.0:
   version "8.6.0"
   resolved "https://registry.npmjs.org/dotenv/-/dotenv-8.6.0.tgz#061af664d19f7f4d8fc6e4ff9b584ce237adcb8b"
 
+dts-css-modules-loader@1.2.2:
+  version "1.2.2"
+  resolved "https://registry.npmjs.org/dts-css-modules-loader/-/dts-css-modules-loader-1.2.2.tgz#e12793ab193323ed757cbcb7bd019e0543a2d8d3"
+  dependencies:
+    loader-utils "^2.0.0"
+
 duplexer3@^0.1.4:
   version "0.1.4"
   resolved "https://registry.npmjs.org/duplexer3/-/duplexer3-0.1.4.tgz#ee01dd1cac0ed3cbc7fdbea37dc0a8f1ce002ce2"
@@ -4218,6 +4224,12 @@ gatsby-page-utils@^1.9.0:
     glob "^7.1.6"
     lodash "^4.17.21"
     micromatch "^4.0.2"
+
+gatsby-plugin-dts-css-modules@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.npmjs.org/gatsby-plugin-dts-css-modules/-/gatsby-plugin-dts-css-modules-2.1.0.tgz#9fd9af4edeb2b626a90290ae39f567482aa434c6"
+  dependencies:
+    dts-css-modules-loader "1.2.2"
 
 gatsby-plugin-gatsby-cloud@^2.9.0:
   version "2.9.0"
