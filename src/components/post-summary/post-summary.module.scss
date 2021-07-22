@@ -1,0 +1,20 @@
+@use '../../styles/variables' as *;
+
+.container {
+  margin-bottom: 3rem;
+}
+
+.header {
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 2rem;
+  color: $primary-color;
+  margin-bottom: 0.5rem;
+}
+
+.date {
+  font-weight: 300;
+}
