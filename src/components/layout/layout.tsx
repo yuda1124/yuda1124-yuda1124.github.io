@@ -21,7 +21,7 @@ const Layout = ({ children }: LayoutProps) => {
     <div className={styles.root}>
       <div className={styles.container}>
         <PageHeader title={data.site.siteMetadata.title} />
-        <main>{children}</main>
+        {children}
       </div>
     </div>
   );
