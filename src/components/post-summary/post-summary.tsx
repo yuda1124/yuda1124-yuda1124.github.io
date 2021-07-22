@@ -18,9 +18,10 @@ const PostSummary = ({ summary }: PostSummaryProps) => {
         <Link to={slug}>
           <h3 className={styles.title}>{title}</h3>
         </Link>
+        <span>🗓️</span>
         <small className={styles.date}>{date}</small>
       </header>
-      <p>{excerpt}</p>
+      <p className={styles.description}>{excerpt}</p>
     </article>
   );
 };

@@ -3,3 +3,4 @@ export const container: string;
 export const header: string;
 export const title: string;
 export const date: string;
+export const description: string;
