@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react';
-import { Link, useStaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql } from 'gatsby';
+import { PageHeader } from '..';
 import * as styles from './layout.module.scss';
 
 type LayoutProps = {
@@ -17,14 +18,12 @@ const Layout = ({ children }: LayoutProps) => {
     }
   `);
   return (
-    <main className={styles.main}>
+    <div className={styles.root}>
       <div className={styles.container}>
-        <h3>
-          <Link to="/">{data.site.siteMetadata.title}</Link>
-        </h3>
-        {children}
+        <PageHeader title={data.site.siteMetadata.title} />
+        <main>{children}</main>
       </div>
-    </main>
+    </div>
   );
 };
 
