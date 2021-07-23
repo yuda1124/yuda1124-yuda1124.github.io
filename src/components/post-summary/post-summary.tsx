@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import * as styles from './post-summary.module.scss';
+import { PostHeader } from '..';
 import { PostSummaryData } from '../../types';
 
 type PostSummaryProps = {
@@ -13,16 +14,12 @@ const PostSummary = ({ summary }: PostSummaryProps) => {
   const { slug } = fields;
   const { date, title } = frontmatter;
   return (
-    <article className={styles.container}>
-      <header className={styles.header}>
-        <Link to={slug}>
-          <h3 className={styles.title}>{title}</h3>
-        </Link>
-        <span>🗓️</span>
-        <small className={styles.date}>{date}</small>
-      </header>
-      <p className={styles.description}>{excerpt}</p>
-    </article>
+    <Link to={slug}>
+      <article className={styles.container}>
+        <PostHeader {...{ title, date }} />
+        <p className={styles.description}>{excerpt}</p>
+      </article>
+    </Link>
   );
 };
 
