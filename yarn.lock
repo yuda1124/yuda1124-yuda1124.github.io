@@ -4393,6 +4393,14 @@ gatsby-remark-autolink-headers@^4.7.0:
     mdast-util-to-string "^2.0.0"
     unist-util-visit "^2.0.3"
 
+gatsby-remark-prismjs@^5.7.0:
+  version "5.7.0"
+  resolved "https://registry.npmjs.org/gatsby-remark-prismjs/-/gatsby-remark-prismjs-5.7.0.tgz#f5279e0e73b60bef86329d7b12e9dd98b2e8d754"
+  dependencies:
+    "@babel/runtime" "^7.14.6"
+    parse-numeric-range "^1.2.0"
+    unist-util-visit "^2.0.3"
+
 gatsby-remark-table-of-contents@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/gatsby-remark-table-of-contents/-/gatsby-remark-table-of-contents-1.0.0.tgz#c59221f6dfc3c17e4041d5a36feaf0fb8d7cc0f7"
@@ -7177,6 +7185,10 @@ parse-latin@^4.0.0:
     nlcst-to-string "^2.0.0"
     unist-util-modify-children "^2.0.0"
     unist-util-visit-children "^1.0.0"
+
+parse-numeric-range@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.npmjs.org/parse-numeric-range/-/parse-numeric-range-1.2.0.tgz#aa70b00f29624ed13e9f943e9461b306e386b0fa"
 
 parse-path@^4.0.0:
   version "4.0.3"
