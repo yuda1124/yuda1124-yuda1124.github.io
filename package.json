@@ -8,8 +8,7 @@
     "gatsby"
   ],
   "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
+    "start": "gatsby develop -H 0.0.0.0",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
@@ -24,6 +23,7 @@
     "gatsby-remark-table-of-contents": "^1.0.0",
     "gatsby-source-filesystem": "^3.9.0",
     "gatsby-transformer-remark": "^4.6.0",
+    "prismjs": "^1.24.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-typography": "^0.16.20",
