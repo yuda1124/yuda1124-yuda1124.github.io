@@ -40,7 +40,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   if (node.internal.type === `MarkdownRemark`) {
     const slug = createFilePath({ node, getNode, trailingSlash: false });
 
-    const category = slug.split('/').slice(-1)[0];
+    const category = slug.split('/').slice(-2)[0];
     console.log(category);
     createNodeField({
       node,
