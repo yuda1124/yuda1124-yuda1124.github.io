@@ -17,6 +17,7 @@ export type PostSummaryData = {
     excerpt: string;
     fields: {
       slug: string;
+      category: string;
     };
     frontmatter: Frontmatter;
   };
