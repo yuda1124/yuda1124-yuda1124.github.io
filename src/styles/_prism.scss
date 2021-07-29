@@ -505,11 +505,6 @@ pre[class*='language-'] {
   background-color: var(--red-30);
 }
 
-/* Adjust the position of the line numbers */
-.gatsby-highlight pre[class*='language-'].line-numbers {
-  padding-left: 2.8em;
-}
-
 /**
  * If you only want to use line numbering
  */
