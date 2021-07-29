@@ -1,0 +1,43 @@
+@use '../../styles/variables' as *;
+
+.container {
+  width: 100%;
+  overflow-x: auto;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  &::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+  }
+}
+
+.tabs {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+.line {
+  margin: 0;
+}
+
+.selected {
+  color: $primary-color;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    border-bottom: 3px solid $primary-color;
+  }
+}
+
+.btn_category {
+  padding: 10px 15px;
+  background-color: #fff;
+  border: 0;
+  cursor: pointer;
+  font-weight: 700;
+}
