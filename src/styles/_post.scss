@@ -1,9 +1,15 @@
+@use './mixin' as *;
+
 .post-container {
   .table-of-contents {
+    @include smaller-than(80rem) {
+      display: none;
+    }
     position: fixed;
     top: 12rem;
-    right: 0;
-    width: 300px;
+    right: 1rem;
+    width: calc((100% - 50rem) / 2);
+    font-size: 14px;
     ul {
       list-style-type: none;
     }
