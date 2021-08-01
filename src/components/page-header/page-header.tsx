@@ -7,7 +7,7 @@ type PageHeaderProps = {
 };
 
 const PageHeader = ({ title }: PageHeaderProps) => (
-  <header>
+  <header className={styles.container}>
     <Link to="/">
       <h3 className={styles.title}>{title}</h3>
     </Link>

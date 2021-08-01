@@ -19,10 +19,10 @@ const Layout = ({ children }: LayoutProps) => {
   `);
   return (
     <div className={styles.root}>
-      <div className={styles.container}>
-        <PageHeader title={data.site.siteMetadata.title} />
-        {children}
-      </div>
+      <PageHeader title={data.site.siteMetadata.title} />
+      <main className={styles.main}>
+        <div className={styles.container}>{children}</div>
+      </main>
     </div>
   );
 };
