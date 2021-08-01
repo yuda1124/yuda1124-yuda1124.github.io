@@ -3,11 +3,9 @@
 .container {
   width: 100%;
   overflow-x: auto;
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-  &::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera*/
-  }
+  padding-bottom: 7px;
+  position: relative;
+  scroll-behavior: smooth;
 }
 
 .tabs {
@@ -27,7 +25,7 @@
   &::after {
     content: '';
     position: absolute;
-    bottom: -1px;
+    bottom: 0;
     left: 0;
     right: 0;
     border-bottom: 3px solid $primary-color;
@@ -39,5 +37,6 @@
   background-color: #fff;
   border: 0;
   cursor: pointer;
-  font-weight: 700;
+  font-weight: $category-font-weight;
+  font-size: $category-font-size;
 }
