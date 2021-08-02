@@ -1,8 +1,7 @@
+const metaConfig = require('./gatsby-meta-config');
+
 module.exports = {
-  siteMetadata: {
-    siteUrl: 'https://www.yourdomain.tld',
-    title: 'young-blog',
-  },
+  siteMetadata: metaConfig,
 
   plugins: [
     'gatsby-plugin-sass',
