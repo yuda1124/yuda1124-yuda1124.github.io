@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-import { PageHeader } from '..';
+import { PageHeader, PageFooter } from '..';
 import * as styles from './layout.module.scss';
 
 type LayoutProps = {
@@ -23,6 +23,7 @@ const Layout = ({ children }: LayoutProps) => {
       <main className={styles.main}>
         <div className={styles.container}>{children}</div>
       </main>
+      <PageFooter />
     </div>
   );
 };

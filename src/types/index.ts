@@ -27,3 +27,14 @@ export type PostSummariesData = {
     edges: PostSummaryData[];
   };
 };
+
+export type SiteMetadata = {
+  site: {
+    siteMetadata: {
+      siteUrl: string;
+      title: string;
+      author: string;
+      github: string;
+    };
+  };
+};
