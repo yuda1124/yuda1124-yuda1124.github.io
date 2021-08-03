@@ -4250,6 +4250,12 @@ gatsby-page-utils@^1.9.0:
     lodash "^4.17.21"
     micromatch "^4.0.2"
 
+gatsby-plugin-dark-mode@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.npmjs.org/gatsby-plugin-dark-mode/-/gatsby-plugin-dark-mode-1.1.2.tgz#9bab271da9f913cd64687a2b2d85b1d62a3605d8"
+  dependencies:
+    prop-types "^15.5.7"
+
 gatsby-plugin-dts-css-modules@^2.1.0:
   version "2.1.0"
   resolved "https://registry.npmjs.org/gatsby-plugin-dts-css-modules/-/gatsby-plugin-dts-css-modules-2.1.0.tgz#9fd9af4edeb2b626a90290ae39f567482aa434c6"
@@ -7692,7 +7698,7 @@ prompts@^2.3.2:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@^15.6.1, prop-types@^15.7.2:
+prop-types@^15.5.7, prop-types@^15.6.1, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.npmjs.org/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   dependencies:
