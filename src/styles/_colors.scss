@@ -14,14 +14,14 @@
   --color-black: #000000;
 }
 
-body {
+body.light-mode {
   --background-color: var(--color-white);
   --header-color: var(--color-dark-cyan);
   --post-title-color: var(--color-dark-cyan);
   --text-color: var(--color-gray);
 }
 
-body.dark {
+body.dark-mode {
   --background-color: var(--color-midnight-express);
   --header-color: var(--color-midnight-express);
   --summary-description-color: var(--color-white);
