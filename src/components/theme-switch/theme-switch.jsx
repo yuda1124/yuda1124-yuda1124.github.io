@@ -1,19 +1,13 @@
 import React from 'react';
-import { ThemeToggler } from 'gatsby-plugin-dark-mode';
+import useDarkMode from 'use-dark-mode';
 
-const ThemeSwitch = () => (
-  <ThemeToggler>
-    {({ theme, toggleTheme }) => (
-      <span>
-        <input
-          type="checkbox"
-          onChange={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
-          checked={theme === 'dark'}
-        />{' '}
-        Dark mode
-      </span>
-    )}
-  </ThemeToggler>
-);
+const ThemeSwitch = () => {
+  const { value, toggle } = useDarkMode(false);
+  return (
+    <span>
+      <input type="checkbox" onChange={e => toggle()} checked={value === 'dark'} /> Dark mode
+    </span>
+  );
+};
 
 export { ThemeSwitch };

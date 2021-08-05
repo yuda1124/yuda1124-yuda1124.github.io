@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: metaConfig,
 
   plugins: [
-    'gatsby-plugin-dark-mode',
+    'gatsby-plugin-use-dark-mode',
     'gatsby-plugin-sass',
     'gatsby-plugin-gatsby-cloud',
     {
