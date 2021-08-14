@@ -1,13 +1,5 @@
 @use './mixin' as *;
-
-$code-colors: (
-  var(--color-purple),
-  var(--color-cyan),
-  var(--color-green),
-  var(--color-orange),
-  var(--color-yellow),
-  var(--color-pink)
-);
+@use './variables' as *;
 
 .post-container {
   .table-of-contents {
@@ -23,33 +15,30 @@ $code-colors: (
       list-style-type: none;
     }
     a {
-      color: #9e9e9e;
+      color: var(--color-gray);
     }
+  }
+  blockquote {
+    font-family: 'Noto Serif KR';
+    font-size: 14px;
   }
 }
 
-body.dark {
+body.dark-mode {
   .post-container {
     .gatsby-highlight {
       border-width: 1rem;
       border-style: solid;
-      border-color: nth($code-colors, 1);
-
-      &:nth-of-type(6n + 2) {
-        border-color: nth($code-colors, 2);
+      @for $i from 1 through 6 {
+        &:nth-of-type(6n + #{$i % 6}) {
+          $color: nth($colors, $i);
+          border-color: var(--color-#{$color});
+        }
       }
-      &:nth-of-type(6n + 3) {
-        border-color: nth($code-colors, 3);
-      }
-      &:nth-of-type(6n + 4) {
-        border-color: nth($code-colors, 4);
-      }
-      &:nth-of-type(6n + 5) {
-        border-color: nth($code-colors, 5);
-      }
-      &:nth-of-type(6n) {
-        border-color: nth($code-colors, 6);
-      }
+    }
+    blockquote {
+      border-color: var(--color-gray);
+      color: var(--color-gray);
     }
   }
 }

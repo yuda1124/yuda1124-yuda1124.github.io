@@ -1,25 +1,23 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import * as styles from './post-summary.module.scss';
 import { PostHeader } from '..';
-import { PostSummaryData } from '../../types';
+import { PostSummaryData, PRIMARY_COLOR } from '../../types';
 
 type PostSummaryProps = {
   summary: PostSummaryData;
+  color: PRIMARY_COLOR;
 };
 
-const PostSummary = ({ summary }: PostSummaryProps) => {
+const PostSummary = ({ summary, color }: PostSummaryProps) => {
   const { node } = summary;
   const { excerpt, fields, frontmatter } = node;
   const { slug } = fields;
   const { date, title } = frontmatter;
   return (
-    <Link to={slug}>
-      <article className={styles.container}>
-        <PostHeader {...{ title, date }} />
-        <p className={styles.description}>{excerpt}</p>
-      </article>
-    </Link>
+    <article className={`${styles.container} ${color}`}>
+      <PostHeader {...{ title, date, slug, color }} />
+      <p className={styles.description}>{excerpt}</p>
+    </article>
   );
 };
 

@@ -38,3 +38,12 @@ export type SiteMetadata = {
     };
   };
 };
+
+export enum PRIMARY_COLOR {
+  PURPLE = 'purple',
+  CYAN = 'cyan',
+  GREEN = 'green',
+  ORANGE = 'orange',
+  YELLOW = 'yellow',
+  PINK = 'pink',
+}

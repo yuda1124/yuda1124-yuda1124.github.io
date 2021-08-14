@@ -1,3 +1,5 @@
+@use './variables' as *;
+
 :root {
   --color-pink: #ff79c6;
   --color-cyan: #8be9fd;
@@ -14,6 +16,20 @@
   --color-black: #000000;
 }
 
+body {
+  .selected-category {
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border-bottom: 3px solid $primary-color;
+    }
+  }
+}
+
 body.light-mode {
   --background-color: var(--color-white);
   --header-color: var(--color-dark-cyan);
@@ -26,4 +42,24 @@ body.dark-mode {
   --header-color: var(--color-midnight-express);
   --summary-description-color: var(--color-white);
   --text-color: var(--color-dark-white);
+  @each $color in $colors {
+    .#{$color} {
+      .post-title {
+        color: var(--color-#{$color});
+      }
+      .page-title {
+        &:hover {
+          color: var(--color-#{$color});
+        }
+      }
+      .selected-category::after {
+        border-color: var(--color-#{$color});
+      }
+    }
+    article.#{$color} {
+      .post-title {
+        color: var(--color-#{$color}) !important;
+      }
+    }
+  }
 }

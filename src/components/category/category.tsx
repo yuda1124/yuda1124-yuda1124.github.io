@@ -28,7 +28,7 @@ const Category = ({ categories, selectedCategory, setCategory }: CategoryProps) 
       <li key={category} className={styles.line}>
         <button
           type="button"
-          className={selectedCategory === category ? `${styles.btn_category} ${styles.selected}` : styles.btn_category}
+          className={selectedCategory === category ? `${styles.btn_category} selected-category` : styles.btn_category}
           onClick={e => {
             onClick(e, category);
           }}>
