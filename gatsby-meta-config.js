@@ -3,4 +3,5 @@ module.exports = {
   title: 'young-blog',
   author: 'young',
   github: 'yuda1124',
+  description: "young's blog",
 };

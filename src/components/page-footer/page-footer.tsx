@@ -1,11 +1,11 @@
 import React from 'react';
 import * as styles from './page-footer.module.scss';
 import { useStaticQuery, graphql } from 'gatsby';
-import { SiteMetadata } from '../../types';
+import { SiteData } from '../../types';
 
 const PageFooter = () => {
-  const data = useStaticQuery<SiteMetadata>(graphql`
-    query SiteMetadata {
+  const data = useStaticQuery<SiteData>(graphql`
+    query SiteData {
       site {
         siteMetadata {
           author

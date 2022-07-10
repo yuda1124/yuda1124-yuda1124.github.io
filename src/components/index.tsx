@@ -6,3 +6,4 @@ export * from './post-header';
 export * from './category';
 export * from './page-footer';
 export * from './theme-switch';
+export * from './seo';

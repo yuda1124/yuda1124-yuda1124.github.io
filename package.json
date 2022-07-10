@@ -31,6 +31,7 @@
     "react": "^17.0.1",
     "react-device-detect": "^1.17.0",
     "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
     "react-typography": "^0.16.20",
     "sass": "^1.35.2",
     "typography": "^0.16.21",
@@ -38,6 +39,7 @@
     "use-dark-mode": "^2.3.1"
   },
   "devDependencies": {
+    "@types/react-helmet": "^6.1.2",
     "@typescript-eslint/eslint-plugin": "^4.28.3",
     "@typescript-eslint/parser": "^4.28.3",
     "eslint-config-airbnb-typescript": "^12.3.1",

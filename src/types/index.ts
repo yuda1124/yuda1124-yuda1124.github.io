@@ -8,6 +8,7 @@ export type BlogPostData = {
     id: string;
     html: string;
     frontmatter: Frontmatter;
+    excerpt: string;
   };
 };
 
@@ -28,15 +29,18 @@ export type PostSummariesData = {
   };
 };
 
-export type SiteMetadata = {
+export type SiteData = {
   site: {
-    siteMetadata: {
-      siteUrl: string;
-      title: string;
-      author: string;
-      github: string;
-    };
+    siteMetadata: SiteMetadata;
   };
+};
+
+export type SiteMetadata = {
+  siteUrl: string;
+  title: string;
+  author: string;
+  github: string;
+  description: string;
 };
 
 export enum PRIMARY_COLOR {

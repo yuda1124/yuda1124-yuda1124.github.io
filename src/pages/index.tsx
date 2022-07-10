@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { graphql } from 'gatsby';
-import { Layout, PostSummaryList, Category } from '../components';
+import { Layout, PostSummaryList, Category, SEO } from '../components';
 import { PostSummariesData } from '../types';
 
 type IndexPageProps = {
@@ -16,6 +16,7 @@ const IndexPage = ({ data }: IndexPageProps) => {
 
   return (
     <Layout>
+      <SEO title="home" />
       <Category {...{ categories, setCategory, selectedCategory: category }} />
       <PostSummaryList {...{ summaries }} />
     </Layout>

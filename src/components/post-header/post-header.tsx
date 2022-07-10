@@ -3,7 +3,6 @@ import { Link } from 'gatsby';
 import { PrimaryColorContext } from '../../context';
 import { PRIMARY_COLOR } from '../../types';
 import * as styles from './post-header.module.scss';
-import useDarkMode from 'use-dark-mode';
 
 type PostHeaderProps = {
   title: string;
